@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Dark navy background -->
+  <rect width="32" height="32" rx="6" fill="#0a0c14"/>
+  <!-- Top half of diamond -->
+  <path d="M16 4L26 14H6L16 4Z" fill="url(#gold)"/>
+  <!-- Bottom half of diamond with gap -->
+  <path d="M6 18L16 28L26 18H6Z" fill="url(#gold)" opacity="0.75"/>
+</svg>
