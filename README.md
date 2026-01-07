@@ -1,36 +1,195 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vaulted | Proposal Intelligence
 
-## Getting Started
+**Turn your winning proposals into an AI-powered knowledge vault. Draft RFP responses 10x faster.**
 
-First, run the development server:
+![Vaulted Logo](public/favicon.svg)
+
+---
+
+## 🎯 What is Vaulted?
+
+Vaulted transforms your past winning proposals into an intelligent knowledge base that automatically drafts responses to new RFPs (Requests for Proposal). Built for Bid Managers who spend 70% of their time searching through old documents for answers they've already written.
+
+**The Problem:** Bid Managers receive 60-page RFPs with 100+ questions, where 80% have been answered before. Finding those answers across scattered PDFs and Word docs takes days.
+
+**The Solution:** Vaulted indexes your past proposals, extracts Q&A pairs, and uses semantic search to match new questions with your best past answers — complete with source citations and confidence scores.
+
+---
+
+## ✨ Key Features
+
+### 🔐 Human-in-the-Loop Trust
+- **Verify Checkbox**: Approve each AI-generated answer before export
+- **Edit Timestamps**: Track when answers were manually reviewed
+- **Source Citations**: Every answer shows the exact document and page number
+- **Confidence Scores**: 74%-98% confidence indicators with visual feedback
+
+### 🏆 Premium Enterprise Design
+- **Dark Navy + Gold**: Professional B2B SaaS aesthetic
+- **Geometric Logo**: Minimalist vault diamond (secure container opening)
+- **Winning Bid Badges**: Highlights answers from successful proposals
+- **Export to Word**: Industry-standard .docx format for final submissions
+
+### 🧠 Intelligent Workflow
+1. **Knowledge Vault**: Upload past winning proposals (PDF/DOCX)
+2. **RFP Upload**: Process new RFPs and extract questions
+3. **Draft Workspace**: Review AI-generated answers with citations
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Styling | Vanilla CSS with CSS Variables |
+| Icons | Lucide React |
+| Fonts | Inter + Playfair Display (Google Fonts) |
+| Deployment | Vercel-ready |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/vaulted.git
+cd vaulted
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+rfp-brain/
+├── public/
+│   └── favicon.svg          # Geometric vault logo
+├── src/
+│   ├── app/
+│   │   ├── globals.css      # Navy + Gold design system
+│   │   ├── layout.tsx       # SEO metadata
+│   │   ├── vault/           # Screen 1: Knowledge Vault
+│   │   ├── upload/          # Screen 2: RFP Upload
+│   │   └── draft/           # Screen 3: Draft Workspace
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── Sidebar.tsx  # Navigation with branding
+│   │   ├── ui/
+│   │   │   └── FileUpload.tsx
+│   │   └── features/
+│   │       ├── DocumentList.tsx
+│   │       └── AnswerCard.tsx  # Human-in-the-loop features
+│   └── data/
+│       └── mockData.ts      # Realistic RFP demo data
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Color Palette:**
+- Background: Deep Navy (`#0a0c14`)
+- Accent: Matte Gold (`#f59e0b`, `#fbbf24`, `#d97706`)
+- Text: Light Grey (`#f8fafc`) / Secondary (`#94a3b8`)
 
-## Deploy on Vercel
+**Typography:**
+- Logo: Playfair Display (serif)
+- UI: Inter (sans-serif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Live Demo
+
+Visit: [vaultedproposals.com](https://vaultedproposals.com)
+
+---
+
+## 💼 Business Model
+
+**Target Market:** Bid Managers at 20-100 employee firms in:
+- Civil Engineering
+- IT Consulting
+- Security Services
+- Professional Services
+
+**Pricing:** $299/month for up to 3 users (founding member tier)
+
+---
+
+## 🔒 Security & Privacy
+
+- **Encrypted Storage**: End-to-end encryption for all proposal data
+- **Local Embeddings**: Semantic search happens locally (data never leaves your infrastructure during matching)
+- **No Training**: Your data is never used to train AI models
+- **Audit Logs**: Full compliance tracking for enterprise requirements
+
+---
+
+## 📸 Screenshots
+
+### Knowledge Vault
+![Knowledge Vault](/.gemini/antigravity/brain/37fac999-0ede-43da-8226-883bb437b4c0/vault_page_rebrand_1767011865864.png)
+
+### Draft Workspace
+![Draft Workspace](/.gemini/antigravity/brain/37fac999-0ede-43da-8226-883bb437b4c0/draft_page_rebrand_1767011878134.png)
+
+---
+
+## 🛣️ Roadmap
+
+**Current (Demo MVP):**
+- ✅ 3-screen clickable prototype
+- ✅ Mock data with realistic RFP questions
+- ✅ Human-in-the-loop verification UI
+- ✅ Premium branding
+
+**Next (Production Backend):**
+- [ ] LlamaParse for PDF extraction
+- [ ] Pinecone vector database
+- [ ] Claude 3.5 Sonnet for answer generation
+- [ ] User authentication (Clerk/Auth0)
+- [ ] Multi-tenant architecture
+
+**Future:**
+- [ ] Real-time collaboration
+- [ ] Compliance templates (ISO, SOC2)
+- [ ] API integrations (SharePoint, Google Drive)
+
+---
+
+## 🤝 Contributing
+
+This is currently a private beta project. If you're interested in contributing or testing, please reach out.
+
+---
+
+## 📄 License
+
+Proprietary - All Rights Reserved
+
+---
+
+## 📞 Contact
+
+- Website: [vaultedproposals.com](https://vaultedproposals.com)
+- Product: Vaulted | Proposal Intelligence
+- Tagline: *Turn past wins into future revenue*
+
+---
+
+**Built for Bid Managers who deserve better tools.**
