@@ -143,10 +143,12 @@ Visit: [vaultedproposals.com](https://vaultedproposals.com)
 ## 📸 Screenshots
 
 ### Knowledge Vault
-![Knowledge Vault](/.gemini/antigravity/brain/37fac999-0ede-43da-8226-883bb437b4c0/vault_page_rebrand_1767011865864.png)
+![Knowledge Vault](public/imgs/knowledge_vault.png)
 
 ### Draft Workspace
-![Draft Workspace](/.gemini/antigravity/brain/37fac999-0ede-43da-8226-883bb437b4c0/draft_page_rebrand_1767011878134.png)
+![Draft Workspace](public/imgs/draft_workspace.png)
+
+> **Tip for Images**: To use these in your code, place them in `public/imgs/` and reference them with `/imgs/filename.png`. In Markdown/GitHub, use the relative path `public/imgs/filename.png` as shown above.
 
 ---
 
